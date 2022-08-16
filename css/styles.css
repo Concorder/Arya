@@ -52,7 +52,11 @@ h1,h2, h3 {
 	font-weight: 800;
 
 }
-
+.gradientText{
+	background: var(--highlight-grad);
+	-webkit-background-clip: text;
+	color: transparent;
+}
 .wrapper {
 	min-width: 980px;
 	max-width: 1366px;
@@ -252,17 +256,13 @@ a {
 }
 
 .hero h1 {
-	color: #fff;
 	margin: auto;
 	max-width: 720px;
 }
 
 .hero h3 {
 	margin-top: 20px;
-	color: transparent;
-	background: var(--highlight-grad);
-	-webkit-background-clip: text;
-	text-shadow: 0 9px 25px #1618175e;
+color: #fff;
 }
 .iconsection {
 	display: flex;
@@ -280,7 +280,7 @@ a {
 .iconbox {
 	position: relative;
 	color: var(--main-color);
-	padding: 0 10px;
+	padding: 0 20px;
 	text-align: center;
 	width: 25%;
 	display: inline-block;
@@ -349,7 +349,7 @@ h2.center.dark {
 
 .iconbox p {
 	white-space: normal;
-    text-align: center;
+    text-align: left;
 }
 .third_block, .halfblock { position: relative; min-height: 600px; }
 
@@ -412,7 +412,7 @@ form {
 	width: 350px;
 }
 .third_block .column {
-	max-width: 36%;
+	max-width: 720px;
     padding: 0 30px;
     margin: 70px 0;
 }
@@ -668,7 +668,7 @@ display: block;
 	background-position: center;
 }
 .officebox {
-	max-width: 36%;
+	max-width: 720px;
 	text-align: center;
 }
 
