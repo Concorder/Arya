@@ -238,7 +238,7 @@ a {
 .main .hero {
 	background: linear-gradient(to right, var(--main-color), #00000080), url(../img/herobanner.jpg);
 	background-size: cover;
-	background-position: top;
+	background-position: center;
 	display: block;
 }
 .hero .wrapper {
@@ -541,7 +541,7 @@ footer a:visited {
 }
 
 .iconsection.dark {
-	background: var(--main-color);
+	background: #fff;
 }
 .about .iconsection > .wrapper {
 	display: flex;
@@ -557,11 +557,12 @@ footer a:visited {
     margin-right: auto;
     white-space: normal;
 }
-.about .iconsection.dark .iconbox {
-	color: #fff;
-}
+
 .about .iconsection.dark .iconbox img {
 	height: 68px;
+}
+.about .halfblock{
+	background: var(--main-color);
 }
 .iconsection.leaders {
     padding: 70px 0;
@@ -634,9 +635,9 @@ html {
 }
 .contact .hero {
 	display: flex;
-	background: linear-gradient(to right, var(--main-color), #00000080), url(../img/contact_hero.jpg) no-repeat;
+	background: linear-gradient(to right, var(--main-color), #00000080), url(../img/contact_hero.jpg) no-repeat, #080808;
 	background-position: bottom;
-	background-size: cover;
+	background-size: contain;
 
 }
 .contact .hero > div {
@@ -1032,6 +1033,9 @@ margin-bottom: 30px;
 .terms-section span {
     font-weight: 700;
 }
+.terms a {
+	color: var(--highlight);
+}
 /*PPC================================*/
 
 
@@ -1163,12 +1167,13 @@ margin-bottom: 30px;
 	height: 100vh;
 	filter: hue-rotate(250deg);
 }
-.iconsection.dark {
-	background: var(--main-color);
-}
+
 .ppc .iconsection > .wrapper {
 	display: flex;
 	flex-flow: wrap;
+}
+.ppc .iconsection.dark {
+	background: var(--main-color);
 }
 .iconsection.dark .iconbox span {
 	max-width: 200px;
@@ -1178,6 +1183,7 @@ margin-bottom: 30px;
 }
 .ppc .iconsection.dark .iconbox {
 	color: #fff;
+
 }
 .ppc .iconsection.dark .iconbox img {
 	height: 68px;
