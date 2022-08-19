@@ -350,6 +350,16 @@ h2.center.dark {
 .iconbox p {
 	white-space: normal;
     text-align: left;
+	width: fit-content;
+	margin: auto;
+}
+.iconbox ul {
+	margin: auto;
+	width: fit-content;
+	text-align: left;
+}
+li::marker{
+	color: var(--highlight);
 }
 .third_block, .halfblock { position: relative; min-height: 600px; }
 
